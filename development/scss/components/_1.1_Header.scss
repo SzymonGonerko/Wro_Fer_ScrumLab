@@ -1,0 +1,38 @@
+.header {
+  background: $color-header;
+  font-family: $font-open-sans;
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-family: $font-charmonman;
+      font-size: 2rem;
+
+      .logo--first {
+        font-weight: 100;
+        color: $color-screen;
+      }
+
+      .logo--second {
+        font-weight: 700;
+        color: $color-screen_header;
+      }
+    }
+
+    .header__nav {
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-screen;
+        padding: 20px;
+
+        &:hover {
+          color: $color-screen_header;
+        }
+      }
+    }
+  }
+}
