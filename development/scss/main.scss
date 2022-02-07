@@ -1,11 +1,40 @@
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
 
+
 @import "variables/colors";
 
 @import "utilities/reset";
 @import "utilities/fonts";
+@import "variables/fonts";
 
-body{
-  background-color: #BADA55;
-}
+@import "components/1.1 Nagłówek";
+@import "components/1.2 Karuzela";
+@import "components/1.3 Call to Action";
+@import "components/1.4 O aplikacji";
+@import "components/1.5 Formularz do zapisu";
+@import "components/1.6 O autorze";
+@import "components/1.7 Stopka";
+
+@import "components/2.1 Widok główny aplikacji";
+@import "components/2.2 Wiadomość i formularz";
+@import "components/2.3 Przechowywanie i dodawanie imienia";
+
+@import "components/3.1 Pulpit - Widget dodaj przepis i dodaj plan";
+@import "components/3.2 Pulpit - Widget powiadomienia";
+@import "components/3.3 Pulpit - Podgląd Tygodnia";
+
+@import "components/4.1 Dodanie Nowego Przepisu (Stylowanie)";
+@import "components/4.2 Dodanie Nowego Przepisu (Logika)";
+
+@import "components/5.1 Wyświetlanie listy przepisów";
+
+@import "components/6.1 Dodanie Nowego Planu (Stylowanie)";
+@import "components/6.2 Dodanie Nowego Planu (Logika)";
+
+@import "components/7.1 Wyświetlanie planów";
+@import "components/8.1 Wyświetlanie listy planów";
+@import "components/9.1 Usunięcie przepisu";
+@import "components/10.1 Edycja przepisu";
+@import "components/11.1 Edycja planu";
+
