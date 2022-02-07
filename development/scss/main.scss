@@ -8,33 +8,31 @@
 @import "utilities/fonts";
 @import "variables/fonts";
 
-@import "components/1.1 Nagłówek";
-@import "components/1.2 Karuzela";
+@import "components/1.1 Header";
+@import "components/1.2 Carousel";
 @import "components/1.3 Call to Action";
-@import "components/1.4 O aplikacji";
-@import "components/1.5 Formularz do zapisu";
-@import "components/1.6 O autorze";
-@import "components/1.7 Stopka";
+@import "components/1.4 About app";
+@import "components/1.5 Form to save";
+@import "components/1.6 About author";
+@import "components/1.7 Footer";
 
-@import "components/2.1 Widok główny aplikacji";
-@import "components/2.2 Wiadomość i formularz";
-@import "components/2.3 Przechowywanie i dodawanie imienia";
+@import "components/2.1 Main app view";
+@import "components/2.2 Message and form";
+@import "components/2.3 Storing and adding name";
 
-@import "components/3.1 Pulpit - Widget dodaj przepis i dodaj plan";
-@import "components/3.2 Pulpit - Widget powiadomienia";
-@import "components/3.3 Pulpit - Podgląd Tygodnia";
+@import "components/3.1 Desktop - Widget add recpies and plan";
+@import "components/3.2 Desktop - Widget info";
+@import "components/3.3 Desktop - Week preview";
 
-@import "components/4.1 Dodanie Nowego Przepisu (Stylowanie)";
-@import "components/4.2 Dodanie Nowego Przepisu (Logika)";
+@import "components/4.1 Add new recipe (Styles)";
 
-@import "components/5.1 Wyświetlanie listy przepisów";
+@import "components/5.1 Dysplaying list of recpies";
 
-@import "components/6.1 Dodanie Nowego Planu (Stylowanie)";
-@import "components/6.2 Dodanie Nowego Planu (Logika)";
+@import "components/6.1 Add new plan (Styles)";
 
-@import "components/7.1 Wyświetlanie planów";
-@import "components/8.1 Wyświetlanie listy planów";
-@import "components/9.1 Usunięcie przepisu";
-@import "components/10.1 Edycja przepisu";
-@import "components/11.1 Edycja planu";
+@import "components/7.1 Displaying plans";
+@import "components/8.1 Displaying list of plans";
+@import "components/9.1 Remove of the recipe";
+@import "components/10.1 Edition of the recipe";
+@import "components/11.1 Eition of the plan";
 
