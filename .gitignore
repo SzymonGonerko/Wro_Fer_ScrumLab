@@ -5,7 +5,7 @@ logs
 npm-debug.log*
 package-lock.json
 node_modules/
-css/main.css
+css/*.css
 
 ### OSX ###
 .DS_Store
@@ -23,4 +23,4 @@ css/main.css
 ### Webstorm ##
 .idea/
 
-css/main.css
+css/*.css
