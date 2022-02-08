@@ -28,14 +28,7 @@ footer {
           line-height: 1.225rem;
         }
         .btn {
-          display: block;
-          background-color: $color_btn;
-          font-weight: bold;
-          color: $color_screen;
-          text-align: center;
-          line-height: 30px;
-          text-decoration: none;
-          width: 30%;
+          @include btn-sml
         }
       }
 
