@@ -1,6 +1,6 @@
 footer {
+  background-color: $color_sidebar;
   .container {
-    background-color: $color_sidebar;
     .wrapper {
       display: flex;
       justify-content: center;
@@ -8,7 +8,7 @@ footer {
     .footer__article {
       display: flex;
       flex-direction: column;
-      font-family: 'open sans';
+      font-family: $font-open-sans;
       min-height: 200px;
       width: 20%;
       color: $color_screen;
@@ -64,16 +64,19 @@ footer {
       }
     }
   }
+
+  }
   .footer__copyright {
     text-align: center;
     height: 40px;
+    font-family: $font-open-sans;
     font-size: 1rem;
     color: $color-screen;
     line-height: 40px;
     background-color: $color_header;
     .footer__copyright--span {
       color: $color_screen_header;
+      font-family: $font-open-sans;
     }
-  }
   }
 }
