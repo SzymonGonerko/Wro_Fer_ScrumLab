@@ -2,3 +2,14 @@
   margin: 0 auto;
   max-width: 1244px;
 }
+
+@mixin btn ($width, $height) {
+  display: block;
+  width: $width;
+  height: $height;
+  text-align: center;
+  text-decoration: none;
+  background-color: $color_btn;
+  font-family: $font-open-sans;
+  color: $color_screen;
+}
