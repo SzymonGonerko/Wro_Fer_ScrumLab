@@ -4,7 +4,7 @@
 .about_author {
   display: flex;
   justify-content: center;
-  background-color: #e0e0e0;
+  background-color: $color_screen;
 
   .container {
     display: flex;
@@ -17,12 +17,7 @@
     margin-left: 70px;
     height: 350px;
     width: 350px;
-    background-color: $color_column_text;
-
-    img {
-      height: 100%;
-      width: 100%;
-    }
+    background-color: $color_nav;
   }
 
   &__description {
