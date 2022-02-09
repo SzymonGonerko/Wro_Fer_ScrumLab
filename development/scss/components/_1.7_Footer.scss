@@ -1,4 +1,81 @@
-.dd {font-size: 40px;
-font-family: "Charmonman";
+footer {
+  background-color: $color_sidebar;
+  .container {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    .footer__article {
+      display: flex;
+      flex-direction: column;
+      font-family: $font-open-sans;
+      min-height: 200px;
+      width: 20%;
+      color: $color_screen;
+      h1 {
+        font-size: 1.225rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .footer__article__form {
+        display: flex;
+        input {
+          display: block;
+          width: 50%;
+          line-height: 1.225rem;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        .btn {
+          @include btn-sml;
+          width: 30%;
+          cursor: pointer;
+        }
+      }
 
+      .footer__article-ul {
+        transform: translateX(15px);
+        li {
+          padding-bottom: 10px;
+          &::before {
+            content: "\2022";
+            color: $color-screen;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+          a {color: $color-screen;
+          text-decoration: none;
+          }
+        }
+      }
+      .footer__article-icons {
+        display: flex;
+        padding-top: 20px;
+        gap: 30px;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  }
+  .footer__copyright {
+    text-align: center;
+    height: 40px;
+    font-family: $font-open-sans;
+    font-size: 1rem;
+    color: $color-screen;
+    line-height: 40px;
+    background-color: $color_header;
+    .footer__copyright--span {
+      color: $color_screen_header;
+      font-family: $font-open-sans;
+    }
+  }
 }

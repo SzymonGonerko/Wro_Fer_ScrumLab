@@ -2,3 +2,28 @@
   margin: 0 auto;
   max-width: 1244px;
 }
+
+@mixin btn-sml {
+  display: block;
+  background-color: $color_btn;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  color: $color_screen;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+@mixin btn-reg {
+  display: block;
+  background-color: $color_btn;
+  font-weight: bold;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: $color_screen;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+
+}
