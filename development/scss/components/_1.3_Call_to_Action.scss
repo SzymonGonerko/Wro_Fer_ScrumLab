@@ -9,21 +9,24 @@
     justify-content: space-between;
     align-items: center;
 
-    .cta__heading {
-      font-size: 2rem;
-      padding: 20px 0;
-    }
+    div {
+      padding-left: 50px;
 
-    .cta__text {
-      font-size: 1.25rem;
-      padding: 10px 0;
-    }
+      .cta__heading {
+        font-size: 2rem;
+        padding: 20px 0;
+      }
 
+      .cta__text {
+        font-size: 1.25rem;
+        padding: 10px 0;
+      }
+    }
     a {
       @include btn-reg;
       font-size: 1.125rem;
       padding: 5px 40px;
-      margin-left: 100px;
+      margin: 0 20px;
     }
   }
 }
