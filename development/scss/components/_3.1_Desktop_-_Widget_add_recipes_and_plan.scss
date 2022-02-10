@@ -1,0 +1,23 @@
+.subSec__desktop {
+    //Każda subsekcja ma klasę subSec z display:none (z wyjątkiem subsekcji optwierającej);
+    //Po po evencie w JS dodwana jest klasa show__subsection, która nadpisuję display:none na display:flex
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+    border: 2px dotted grey;
+    background-color: $color_screen;
+    .subtasks {
+        display: flex;
+        width: 100%;
+    .Widget_add_recipes_and_plan{
+        //area dedicated for your code
+        display: flex;
+        width: 50%;
+        .square {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        background-color: lightgreen;
+        }
+    }
+}}
