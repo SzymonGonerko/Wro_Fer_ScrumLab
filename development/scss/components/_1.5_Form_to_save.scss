@@ -1,18 +1,9 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
 .newsletter {
+  display: flex;
+  align-items: center;
   background-color: $color_sidebar;
   justify-content: space-around;
   height: 4.5rem;
-}
-.newsletter__form {
-  display: flex;
-  width: 30%;
 }
 
 .newsletter h3 {
@@ -20,6 +11,12 @@
   font-size: 1.5rem;
   font-family: $font-open-sans;
 }
+
+.newsletter__form {
+  display: flex;
+  width: 30%;
+}
+
 .newsletter__form--mail {
   border: none;
   display: block;
@@ -27,7 +24,7 @@
   width: 60%;
   }
 
-.btn--newsletter {
+.newsletter__form--btn {
   display: block;
   background-color: $color_btn;
   font-weight: bold;
