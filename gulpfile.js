@@ -1,39 +1,38 @@
-// Ścieżka do aktualnie wykonywanego zadania
-const entryPath = "development";
+var gulp = require("gulp");
+var sass = require("gulp-sass");
+var sourcemaps = require("gulp-sourcemaps");
+var autoprefixer = require("gulp-autoprefixer");
+var browserSync = require("browser-sync").create();
 
-const gulp = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const sourcemaps = require("gulp-sourcemaps");
-const autoprefixer = require("gulp-autoprefixer");
-const browserSync = require("browser-sync").create();
+gulp.task("watch", function(cb) {
+    gulp.watch("development/scss/**/*.scss", gulp.series("sass"));
+    cb();
+});
 
-function compileSass(done) {
-    gulp
-        .src(entryPath + "/scss/main.scss")
-        .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
-        .pipe(autoprefixer())
-        .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest(entryPath + "/css"));
-
-    done();
-}
-
-function watcher(done) {
+gulp.task("serve", function(cb) {
     browserSync.init({
-        server: "./" + entryPath,
+        server: "./development"
     });
+    gulp.watch("development/scss/**/*.scss", gulp.series("sass"));
+    gulp.watch("development/*.html").on("change", browserSync.reload);
+    gulp.watch("development/js/*.js").on("change", browserSync.reload);
+    cb();
+});
 
-    gulp.watch(entryPath + "/scss/**/*.scss", gulp.series(compileSass, reload));
-    gulp.watch(entryPath + "/*.html", gulp.series(reload));
+// Compile sass into CSS & auto-inject into browsers
+gulp.task("sass", function() {
+    return gulp
+        .src("development/scss/**/*.scss")
+        .pipe(sass().on("error", sass.logError))
+        .pipe(sourcemaps.init())
+        .pipe(
+            autoprefixer({
+                browsers: ["last 4 versions"]
+            })
+        )
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest("development/css"))
+        .pipe(browserSync.stream());
+});
 
-    done();
-}
-
-function reload(done) {
-    browserSync.reload();
-    done();
-}
-
-exports.sass = gulp.parallel(compileSass);
-exports.default = gulp.parallel(compileSass, watcher);
+gulp.task("default", gulp.series("serve"));
