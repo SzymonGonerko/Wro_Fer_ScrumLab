@@ -1,0 +1,40 @@
+
+//------------------------------1.6 ABOUT AUTHOR----------------------
+
+.about_author {
+  display: flex;
+  justify-content: center;
+  background-color: $color_screen;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1244px;
+    padding: 80px 0;
+  }
+
+  &__avatar {
+    margin-left: 70px;
+    height: 350px;
+    width: 350px;
+    background-color: $color_nav;
+  }
+
+  &__description {
+    margin-right: 60px;
+    width: 650px;
+    font-family: $font-open-sans;
+    color: $color_column_text;
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+      line-height: 25px;
+    }
+  }
+}
