@@ -57,7 +57,7 @@
       color: $color_btn;
       padding-right: 10px;
     }
-    .show__icon-inSidebar {
+    .show-icon {
       display: inline-block;
     }
 
@@ -76,14 +76,14 @@
         border-left: 2px solid $color_btn;
       }
     }
-    .oranged_border_Click {
+    .selected-input {
       border-left: 2px solid $color_btn;
     }
   }
 }
 }
 
-  .area__for_subsections {
+  .area_for_subsections {
     display: flex;
     justify-content: center;
     align-items: center;
