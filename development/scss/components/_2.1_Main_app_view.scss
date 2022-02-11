@@ -1,3 +1,4 @@
+@use "sass:color";
 .app__header {
   .app__header__wrapper{
     .app__logo{
@@ -54,7 +55,7 @@
     }
     i {
       display: none;
-      font-size: 1.5rem;
+      font-size: 1.225rem;
       color: $color_btn;
       padding-right: 10px;
     }
@@ -71,14 +72,17 @@
       text-align: left;
       border: none;
       background-color: $color_sidebar;
-      color: $color_screen;
+      color: $color_expanded_item;
       transition: 0.2s;
       &:hover {
         border-left: 2px solid $color_btn;
+        color: $color_screen;
+
       }
     }
     .selected-input {
       border-left: 2px solid $color_btn;
+      color: $color_screen;
     }
   }
 }
