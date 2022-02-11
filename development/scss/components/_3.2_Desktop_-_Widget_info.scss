@@ -1,0 +1,16 @@
+.subSec__desktop {
+  .subtasks {
+    .Widget_info {
+      //area dedicated for your code
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+      .info {
+        background-color: lightblue;
+        height: 50px;
+        width: 100%;
+
+      }
+
+  }}}
