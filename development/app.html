@@ -35,7 +35,7 @@
 
     <section class="area_for_subsections">
 
-      <section class="subSec subSec__welcome show__subsection" data-isSelected="true" data-ticket-first="2.2_Message_and_form" data-ticket-sec="2.3_Storing_and_adding_name">
+      <section class="subSec subSec__welcome" data-isSelected="true" data-ticket-first="2.2_Message_and_form" data-ticket-sec="2.3_Storing_and_adding_name">
         <div class="Message_and_form" data-ticket="2.2_Message_and_form">
           <h1>Witaj,</h1>
           <p>wygląda na to, że jesteś tutaj pierwszy raz!</p>
@@ -45,13 +45,32 @@
         </div>
       </section>
 
-      <section class="subSec subSec__desktop" data-isSelected="false" data-ticket-first="3.1_Desktop_-_Widget_add_recipes_and_plan" data-ticket-sec="3.2_Desktop_-_Widget_info" data-ticket-third="3.3_Desktop_-_Week_preview">
+      <section class="subSec subSec__desktop show__subsection" data-isSelected="false" data-ticket-first="3.1_Desktop_-_Widget_add_recipes_and_plan" data-ticket-sec="3.2_Desktop_-_Widget_info" data-ticket-third="3.3_Desktop_-_Week_preview">
         <div class="subtasks">
           <div class="Widget_add_recipes_and_plan" data-ticket="3.1_Desktop_-_Widget_add_recipes_and_plan">
-            <!--        area dedicated for your code -  -->
-            <!--        ticket 3.1_Desktop_-_Widget_add_recipes_and_plan-->
-                <div class="square">Dodaj przepis</div>
-                <div class="square">Dodaj plan</div>
+            <div class="wrapper">
+              <div class="widget" data-event="add_recipe">
+                <i class="far fa-6x fa-plus-square"></i>
+                <h1>dodaj przepis</h1>
+              </div>
+              <div class="widget" data-event="add_plan">
+                <i class="far fa-6x fa-plus-square"></i>
+                <h1>dodaj plan</h1>
+              </div>
+            </div>
+
+            <div class="modal1 none">
+              <p class="text1">dodaj przepis</p>
+              <p class="text2">dodaj plan</p>
+              <button id="close1">
+                <i class="fas fa-2x fa-times"></i>
+              </button>
+            </div>
+            <div class="modal2 none">
+              <button id="close2">
+                <i class="fas fa-2x fa-times"></i>
+              </button>
+            </div>
           </div>
           <div class="Widget_info" data-ticket="3.2_Desktop_-_Widget_info">
             <!--        area dedicated for your code -  -->
@@ -66,6 +85,19 @@
           <!--        area dedicated for your code -  -->
           <!--        ticket 3.3_Desktop_-_Week_preview-->
         </div>
+      </section>
+      <section class="subSec subSec__desktop add__new__recipe" data-isSelected="false" data-ticket-first="4.1_Add_new_recipe" data-ticket-sec="4.2_Add_new_recipe">
+        <div class="wrapper_recipe">
+        <form class="form__new__recipe" action="">
+          <header class="header__add__new__recipe">
+            <h1>Nowy Przepis</h1>
+            <input type="submit" value="Zapisz i zamknij">
+          </header>
+        </form>
+        </div>
+      </section>
+      <section class="subSec subSec__desktop add__new__plan" data-isSelected="false" data-ticket-first="6.1_Add_new_plan" data-ticket-sec="6.2_Add_new_plan">
+        <div>fdgfgdfgfdgtyhfnfbbggggbbb</div>
       </section>
     </section>
   </main>
