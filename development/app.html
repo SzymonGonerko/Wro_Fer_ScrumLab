@@ -35,7 +35,7 @@
 
     <section class="area_for_subsections">
 
-      <section class="subSec subSec__welcome show__subsection" data-isSelected="true" data-ticket-first="2.2_Message_and_form" data-ticket-sec="2.3_Storing_and_adding_name">
+      <section class="subSec subSec__welcome " data-isSelected="true" data-ticket-first="2.2_Message_and_form" data-ticket-sec="2.3_Storing_and_adding_name">
         <div class="Message_and_form" data-ticket="2.2_Message_and_form">
             <h1>Witaj!</h1>
             <p>wygląda na to że jesteś tu po raz pierwszy</p>
@@ -51,13 +51,32 @@
       </section>
 
 
-      <section class="subSec subSec__desktop" data-isSelected="false" data-ticket-first="3.1_Desktop_-_Widget_add_recipes_and_plan" data-ticket-sec="3.2_Desktop_-_Widget_info" data-ticket-third="3.3_Desktop_-_Week_preview">
+      <section class="subSec subSec__desktop show__subsection" data-isSelected="false" data-ticket-first="3.1_Desktop_-_Widget_add_recipes_and_plan" data-ticket-sec="3.2_Desktop_-_Widget_info" data-ticket-third="3.3_Desktop_-_Week_preview">
         <div class="subtasks">
           <div class="Widget_add_recipes_and_plan" data-ticket="3.1_Desktop_-_Widget_add_recipes_and_plan">
-            <!--        area dedicated for your code -  -->
-            <!--        ticket 3.1_Desktop_-_Widget_add_recipes_and_plan-->
-                <div class="square">Dodaj przepis</div>
-                <div class="square">Dodaj plan</div>
+            <div class="wrapper">
+              <div class="widget1">
+                <i class="far fa-6x fa-plus-square"></i>
+                <h1>dodaj przepis</h1>
+              </div>
+              <div class="widget2">
+                <i class="far fa-6x fa-plus-square"></i>
+                <h1>dodaj plan</h1>
+              </div>
+            </div>
+
+            <div class="modal1 none">
+              <p class="text1">dodaj przepis</p>
+              <p class="text2">dodaj plan</p>
+              <button id="close1">
+                <i class="fas fa-2x fa-times"></i>
+              </button>
+            </div>
+            <div class="modal2 none">
+              <button id="close2">
+                <i class="fas fa-2x fa-times"></i>
+              </button>
+            </div>
           </div>
           <div class="Widget_info" data-ticket="3.2_Desktop_-_Widget_info">
             <!--        area dedicated for your code -  -->
