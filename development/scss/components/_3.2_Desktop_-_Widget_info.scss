@@ -1,16 +1,60 @@
 .subSec__desktop {
+
   .subtasks {
+
     .Widget_info {
-      //area dedicated for your code
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 50%;
-      .info {
-        background-color: lightblue;
-        height: 50px;
-        width: 100%;
+      width: 65%;
 
+      &_msg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+
+        &_leftBox {
+          display: flex;
+          align-items: center;
+          margin-left: 10px;
+
+            .icon {
+              font-size: 2rem;
+            }
+
+            &_text {
+              margin-left: 15px;
+              font-size: 1.3rem;
+              font-family: $font-open-sans;
+            }
+          }
+
+          &_rightBox {
+
+            .icon-x {
+              padding: 3px;
+              font-size: 1.4rem;
+              cursor: pointer;
+              transform: translate(-5px, -10px);
+            }
+          }
+        }
+
+      .info {
+        color: $color_msg_info;
+        border: 2px dotted $color_msg_info;
       }
 
-  }}}
+      .warn {
+        color: $color_msg_warn;
+        border: 2px dotted $color_msg_warn;
+      }
+
+      .success {
+        color: $color_msg_success;
+        border: 2px dotted $color_msg_success;
+      }
+    }
+  }
+}
