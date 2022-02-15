@@ -13,18 +13,16 @@ function hideInfoWidget () {
     infoWidget.style.display = "none"
 }
 
-iconXInfo.addEventListener('click', hideInfoWidget)
-
 function hideWarnWidget () {
     warnWidget.style.display = "none"
 }
-
-iconXWarn.addEventListener('click', hideWarnWidget)
 
 function hideSuccessWidget () {
     successWidget.style.display = "none"
 }
 
+iconXInfo.addEventListener('click', hideInfoWidget)
+iconXWarn.addEventListener('click', hideWarnWidget)
 iconXSuccess.addEventListener('click', hideSuccessWidget)
 
 
