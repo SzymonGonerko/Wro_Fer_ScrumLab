@@ -8,6 +8,7 @@
   height: 90%;
   border: 2px dotted grey;
   background-color: $color_screen;
+
   .Message_and_form {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,7 @@
     color: $color_header;
     width: 50%;
     text-align: center;
+
     h1 {
       font-size: 2.25rem;
       font-weight: bold
