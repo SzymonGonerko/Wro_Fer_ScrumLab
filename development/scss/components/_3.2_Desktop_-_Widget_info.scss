@@ -5,7 +5,7 @@
     .Widget_info {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       width: 65%;
 
       &_msg {
@@ -44,11 +44,13 @@
       .info {
         color: $color_msg_info;
         border: 2px dotted $color_msg_info;
+        margin-bottom: 7px;
       }
 
       .warn {
         color: $color_msg_warn;
         border: 2px dotted $color_msg_warn;
+        margin-bottom: 7px;
       }
 
       .success {
