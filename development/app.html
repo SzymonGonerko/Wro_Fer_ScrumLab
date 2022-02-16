@@ -79,11 +79,86 @@
              <div class="info">info</div>
           </div>
         </div>
-        <div class="Week_preview" data-ticket="3.3_Desktop_-_Week_preview">
-          <p>Twój plan na nr. tygodnia tydzień</p>
-          <!--        area dedicated for your code -  -->
-          <!--        ticket 3.3_Desktop_-_Week_preview-->
-        </div>
+          <section class="subSec__desktop week__preview show__subsection"  data-ticket="3.3_Desktop_-_Week_preview">
+            <div class="week__preview--header">
+              <p>Twój plan na:  <span id="week__preview--week_number">{nr_tygodnia}</span>  tydzień:</p>
+            </div>
+            <table class="week__preview__table">
+              <tr class="week__preview__table--days">
+                <th>Poniedziałek</th>
+                <th>Wtorek</th>
+                <th>Środa</th>
+                <th>Czwartek</th>
+                <th>Piątek</th>
+                <th>Sobota</th>
+                <th>Niedziela</th>
+              </tr>
+              <tr class="week__preview__table--sniadanie">
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+              </tr>
+              <tr class="week__preview__table--drugie_sniadanie">
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+              </tr>
+              <tr class="week__preview__table--zupa">
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+              </tr>
+              <tr class="week__preview__table--drugie_danie">
+                <td>drugie danie</td>
+                <td>drugie danie</td>
+                <td>drugie danie</td>
+                <td>drugie danie</td>
+                <td>drugie danie</td>
+                <td>drugie danie</td>
+                <td>drugie danie</td>
+              </tr>
+              <tr class="week__preview__table--kolacja">
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+              </tr>
+            </table>
+            <div class="week__preview__switch">
+              <div id="week__preview-previous">
+                <p>
+                    <span>
+                    <i class="week__preview__switch--arrow_left"></i>
+                    <i class="week__preview__switch--arrow_left"></i>
+                    </span>
+                  poprzedni
+                </p>
+              </div>
+              <div id="week__preview-next">
+                <p>następny
+                  <span>
+                    <i class="week__preview__switch--arrow_right"></i>
+                    <i class="week__preview__switch--arrow_right"></i>
+                    </span>
+                </p>
+              </div>
+            </div>
+          </section>
       </section>
     </section>
   </main>
