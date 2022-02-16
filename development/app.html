@@ -93,11 +93,57 @@
             <h1>Nowy Przepis</h1>
             <input type="submit" value="Zapisz i zamknij">
           </header>
+          <div class="name_recipe">
+            <label>Nazwa przepisu</label>
+            <input id="name_recipe" class="name_recipe" data-clear="clear_value" type="text" placeholder="tutaj wpisz nazwę swojego przepisu">
+          </div>
+          <div class="description_recipe">
+            <label>Opis przepisu</label>
+            <textarea id="description" data-clear="clear_value" name="description" rows="3" cols="33" placeholder="miejsce na twój opis"></textarea>
+          </div>
+
+
+          <div class="container_recipe">
+
+            <div class="instruction_recipe">
+              <h2>Instrukcje</h2>
+              <div class="add_instruction">
+                <textarea id="area__instruction" data-clear="clear_value" name="instruction" rows="2" cols="33" placeholder="Twoja instrukcja"></textarea>
+                <i id="icon__add__Instruction" data-event="iconInstruction" class="fas fa-plus icon__recipe"></i>
+              </div>
+              <div class="box_with_instruction">
+                <ol type="1" class="ol__instruction"></ol>
+
+              </div>
+
+            </div>
+
+            <div class="ingredients_recipe">
+              <h2>Składniki</h2>
+              <div class="add_ingredients">
+                <textarea id="area__ingredients" data-clear="clear_value" name="" rows="2" cols="33" placeholder="Twoje składniki"></textarea>
+                <i id="icon__add__Ingredient" data-event="iconIngredients" class="fas fa-plus icon__recipe"></i>
+              </div>
+              <div class="box_with_ingredients">
+                <ol type="1" class="ol__ingredient"></ol>
+              </div>
+
+            </div>
+
+
+
+          </div>
         </form>
         </div>
       </section>
       <section class="subSec subSec__desktop add__new__plan" data-isSelected="false" data-ticket-first="6.1_Add_new_plan" data-ticket-sec="6.2_Add_new_plan">
         <div>fdgfgdfgfdgtyhfnfbbggggbbb</div>
+      </section>
+      <section class="subSec subSec__desktop section__success" data-isSelected="false" data-ticket-first="4.1_Add_new_recipe(success)">
+        <div class="success-animation">
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+        </div>
+        <div>Przepis został dodany</div>
       </section>
     </section>
   </main>
