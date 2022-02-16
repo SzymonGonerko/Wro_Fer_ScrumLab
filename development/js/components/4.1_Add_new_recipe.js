@@ -31,7 +31,7 @@ function addRecipe () {
         el.dataset.clear === "clear_value" ? el.value = '': el.value
     }
 
-    olInstruction.innerHTML = '<ol type="1" className="ol__instruction"></ol>'
+    olInstruction.innerHTML = '<ol type="1" class="ol__instruction"></ol>'
     olIngredient.innerHTML = '<ol type="1" class="ol__ingredient"></ol>'
 }
 
