@@ -20,7 +20,6 @@ for (let el of widgets) {
 }
 
 function addRecipe () {
-    console.log(allRecipes)
     for (let el of subSections) {
         el.dataset.isselected = "false";
         const {ticketFirst} = el.dataset
@@ -96,8 +95,8 @@ function saveRecipe (event) {
 
             };
 
-        }, 3000);
-
+        }, 1700);
+        console.log(allRecipes)
     }
 
 
