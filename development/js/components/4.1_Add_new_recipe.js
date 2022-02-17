@@ -97,7 +97,7 @@ function saveRecipe (event) {
             };
 
         }, 1700);
-        console.log(allRecipes)
+console.log(allRecipes)
     }
 
 
@@ -162,8 +162,9 @@ function Recipe () {
         if (this.isCorrect) {
             allRecipes.push(this.recpie)
             localStorage.setItem('allRecipes', JSON.stringify(allRecipes))
-            localStorage.setItem("getNumOfRecipes", JSON.parse(localStorage.getItem('allRecipes')).length)
-            setNumberOfRecipes(localStorage.getItem("getNumOfRecipes"))
+            localStorage.setItem("numbersOfRecipes", JSON.parse(localStorage.getItem('allRecipes')).length)
+            console.log(localStorage.getItem("numbersOfRecipes"))
+            updateInfoWidget (localStorage.getItem("numbersOfRecipes"))
             return this.isCorrect
         }
 
