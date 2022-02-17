@@ -1,7 +1,13 @@
-const textOfWidget = document.querySelector(".Widget_info_msg_leftBox_text")
-let numbersOfRecipes = localStorage.getItem("NumOfRecipes")
+
+console.log(localStorage.getItem("getNumOfRecipes"))
+localStorage.setItem("getNumOfRecipes", JSON.parse(localStorage.getItem('allRecipes')).length)
+
+setNumberOfRecipes (localStorage.getItem("getNumOfRecipes"))
+
+
 
 function setNumberOfRecipes (num) {
+    const textOfWidget = document.querySelector(".Widget_info_msg_leftBox_text")
     console.log(num)
     if (num == 0) {
         textOfWidget.innerText = `Wygląda na to że nie masz przepisów, dodaj!`

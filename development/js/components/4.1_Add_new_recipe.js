@@ -162,8 +162,8 @@ function Recipe () {
         if (this.isCorrect) {
             allRecipes.push(this.recpie)
             localStorage.setItem('allRecipes', JSON.stringify(allRecipes))
-            localStorage.setItem("getNumOfRecipes", allRecipes.length)
-            setNumberOfRecipes (localStorage.getItem("getNumOfRecipes"))
+            localStorage.setItem("getNumOfRecipes", JSON.parse(localStorage.getItem('allRecipes')).length)
+            setNumberOfRecipes(localStorage.getItem("getNumOfRecipes"))
             return this.isCorrect
         }
 
