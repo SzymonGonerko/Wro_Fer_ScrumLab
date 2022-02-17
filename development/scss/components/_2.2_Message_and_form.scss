@@ -1,24 +1,49 @@
 .subSec__welcome {
-  //Każda subsekcja ma klasę subSec z display:none (z wyjątkiem subsekcji optwierającej);
+  //Każda subsekcja ma klasę subSec z display:none (z wyjątkiem subsekcji otwierającej);
   //Po po evencie w JS dodwana jest klasa show__subsection, która nadpisuję display:none na display:flex
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border: 2px dotted grey;
   background-color: $color_screen;
+
   .Message_and_form {
-    //area dedicated for your code
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: $font-open-sans;
+    color: $color_header;
+    width: 50%;
+    text-align: center;
+
     h1 {
-      font-size: 30px;
-      color: $color_header;
+      font-size: 2.25rem;
+      font-weight: bold
     }
 
-  }
+    p {
+      font-size: 1.75rem;
+      font-weight: bold;
+      padding: 25px 0;
+    }
 
+    .message_form__input {
+      line-height: 2rem;
+      border: 1px solid $color_table_row_text;
+      width: 50%;
+      padding: 0 15px;
+      font-size: 1.125rem;
+    }
+
+    .message_form__btn {
+      @include btn-reg;
+      border: none;
+      font-size: 1.75rem;
+      padding: 5px 30px;
+      margin-top: 20px;
+    }
+  }
 }

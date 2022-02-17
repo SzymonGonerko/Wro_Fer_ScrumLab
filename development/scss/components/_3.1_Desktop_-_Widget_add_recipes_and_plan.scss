@@ -9,15 +9,45 @@
     .subtasks {
         display: flex;
         width: 100%;
+        height: 40%;
     .Widget_add_recipes_and_plan{
-        //area dedicated for your code
         display: flex;
         width: 50%;
-        .square {
-        width: 150px;
-        height: 150px;
-        margin: 10px;
-        background-color: lightgreen;
+        height: 100%;
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .far {
+            color:#468966;
+            font-size: 3rem;
+        }
+        .widget {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            font-family: $font-open-sans;
+            font-size: 1.225rem;
+            margin: 15px;
+            width: 50%;
+            height: 80%;
+            border: 1px dotted green;
+            cursor: default;
+            transition: 0.2s;
+            &:hover {
+                background-color: #ff8e48;
+                transform: scale(1.05);
+            }
+        }
+
+        .none {
+            display: none;
         }
     }
 }}

@@ -1,0 +1,32 @@
+.cta {
+  background: $color-header;
+  font-family: $font-open-sans;
+  color: $color-screen;
+  padding: 50px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      padding-left: 50px;
+
+      .cta__heading {
+        font-size: 2rem;
+        padding: 20px 0;
+      }
+
+      .cta__text {
+        font-size: 1.25rem;
+        padding: 10px 0;
+      }
+    }
+    a {
+      @include btn-reg;
+      font-size: 1.125rem;
+      padding: 5px 40px;
+      margin: 0 20px;
+    }
+  }
+}
