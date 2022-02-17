@@ -10,7 +10,13 @@ const olIngredient = document.querySelector(".ol__ingredient")
 const areaIngredients = document.querySelector("#area__ingredients")
 
 // ----------------------------
-const allRecipes = [];
+let allRecipes = [];
+try {
+    allRecipes = JSON.parse(localStorage.getItem('allRecipes')) || []
+} catch (error) {
+    console.info(error)
+}
+
 // JSON.parse(localStorage.getItem('allRecipes'))
 // ----------------------------
 
@@ -97,7 +103,7 @@ function saveRecipe (event) {
             };
 
         }, 1700);
-console.log(allRecipes)
+// console.log(allRecipes)
     }
 
 
@@ -163,7 +169,6 @@ function Recipe () {
             allRecipes.push(this.recpie)
             localStorage.setItem('allRecipes', JSON.stringify(allRecipes))
             localStorage.setItem("numbersOfRecipes", JSON.parse(localStorage.getItem('allRecipes')).length)
-            console.log(localStorage.getItem("numbersOfRecipes"))
             updateInfoWidget (localStorage.getItem("numbersOfRecipes"))
             return this.isCorrect
         }
