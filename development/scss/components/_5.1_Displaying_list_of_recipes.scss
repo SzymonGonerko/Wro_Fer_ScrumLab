@@ -40,7 +40,7 @@
 
     table {
         text-align: left;
-
+        width: 100%;
 
         thead {
             font-size: 1.7rem;
@@ -71,10 +71,12 @@
 
             .description {
                 font-size: 1rem;
+                width: 100%;
             }
 
             .icons {
                 display: flex;
+                max-width: 70px;
                 justify-content: space-around;
                 font-size: 1.4rem;
             }
@@ -87,7 +89,6 @@
                 color: $color_btn;
             }
         }
-
 
     }
 }
