@@ -167,6 +167,7 @@ function Recipe () {
 
         if (this.isCorrect) {
             allRecipes.push(this.recpie)
+            console.log(this.recpie)
             localStorage.setItem('allRecipes', JSON.stringify(allRecipes))
             localStorage.setItem("numbersOfRecipes", JSON.parse(localStorage.getItem('allRecipes')).length)
             updateInfoWidget (localStorage.getItem("numbersOfRecipes"))
