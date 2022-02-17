@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+<body>
+</main>
+
+  </section>
+
+  <header class="header app__header">
+    <div class="container header__wrapper app__header__wrapper">
+      <a class="logo app__logo" href="index.html">
+        <span class="logo--first app__logo--first">Zaplanuj</span>
+        <span class="logo--second app__logo--second">Jedzonko</span>
+      </a>
+      <form action="#" class="app__header__form_user">
+        <input class="user name" type="button" value="Imię" data-ticket="2.2">
+        <i class="fas fa-user"></i>
+      </form>
+    </div>
+  </header>
+
+  <main class="app">
+    <nav class="app__sidebar--left">
+      <ul>
+        <li><input class="selected-input" type="button" data-isSelected="true" value="Pulpit"><i class="fas fa-arrow-right show-icon"></i></li>
+        <li><input class="" type="button" data-isSelected="false" value="Przepisy"><i class="fas fa-arrow-right"></i></li>
+        <li><input class="" type="button" data-isSelected="false" value="Plany"><i class="fas fa-arrow-right"></i></li>
+      </ul>
+    </nav>
+
+
+    <section id="plan" class="plan subSec subSec__desktop show__subsection">
+      <div class="plan_box">
+        <form class="plan_box_header">
+          <p class="plan_box_header--text">nowy plan</p>
+          <button class="plan_box_header--submit" type="submit">Zapisz i zamknij</button>
+        </form>
+
+        <div class="plan_box_separator"></div>
+
+        <div class="plan_box_main">
+          <form class="plan_box_main_name">
+            <label class="plan_box_main_name--text" for="name">Nazwa planu</label>
+            <input class="plan_box_main_name--input" id="name" type="text" maxlength="50" placeholder="Wpisz nazwę planu...">
+          </form>
+
+          <form class="plan_box_main_description">
+            <label class="plan_box_main_description--text" for="description">Opis planu</label>
+            <textarea class="plan_box_main_description--input" id="description" maxlength="360" placeholder="Wpisz opis planu..."></textarea>
+          </form>
+
+          <form class="plan_box_main_week">
+            <label class="plan_box_main_week--text" for="week">Numer tygodnia</label>
+            <input class="plan_box_main_week--input" id="week" type="number" min="1" max="52" placeholder="Nr">
+          </form>
+
+          <div class="plan_box_main_separator"></div>
+
+          <div class="plan_box_main_table">
+            <table>
+              <tr>
+                <th></th>
+                <th>śniadanie</th>
+                <th>drugie śniadanie</th>
+                <th>zupa</th>
+                <th>drugie danie</th>
+                <th>kolacja</th>
+              </tr>
+              <tr>
+                <td>poniedziałek</td>
+                <td>
+                  <select name="list" id="1">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="2">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="3">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="4">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="5">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>wtorek</td>
+                <td>
+                  <select name="list" id="6">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="7">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="8">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="9">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="10">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>środa</td>
+                <td>
+                  <select name="list" id="11">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="12">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="13">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="14">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="15">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>czwartek</td>
+                <td>
+                  <select name="list" id="16">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="17">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="18">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="19">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="20">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>piątek</td>
+                <td>
+                  <select name="list" id="21">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="22">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="23">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="24">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="25">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>sobota</td>
+                <td>
+                  <select name="list" id="26">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="27">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="28">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="29">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="30">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>niedziela</td>
+                <td>
+                  <select name="list" id="31">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="32">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="33">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="34">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="list" id="35">
+                    <option value="">Wybierz</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</main>
+<script src="./js/app.js"></script>
+</body>
+</html>
