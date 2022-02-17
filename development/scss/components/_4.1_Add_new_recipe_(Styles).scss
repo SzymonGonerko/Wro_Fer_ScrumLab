@@ -1,0 +1,248 @@
+.section__success {
+  background-color: #b6ffb6;
+  font-size: 2.225rem;
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .success-animation { margin:150px auto;}
+
+  .checkmark {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #4bb71b;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #4bb71b;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position:relative;
+    top: 5px;
+    right: 5px;
+    margin: 0 auto;
+  }
+  .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #4bb71b;
+    fill: #b6ffb6;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+
+  }
+
+  .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  }
+
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes scale {
+    0%, 100% {
+      transform: none;
+    }
+
+    50% {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+
+  @keyframes fill {
+    100% {
+      box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+  }
+  div{width: 50%}
+}
+
+.add__new__recipe {
+  justify-content: center;
+  align-items: center;
+  .wrapper_recipe {
+    display: flex;
+    width: 97%;
+    height: 95%;
+    .form__new__recipe {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+    .header__add__new__recipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+      padding-bottom: 5px;
+    border-bottom: 2px solid $color_header;
+      h1 {
+        font-size: 2rem;
+        font-family: $font-open-sans;
+      }
+      input {
+        display: block;
+        background-color: $color_btn;
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: $color_screen;
+        font-family: $font-open-sans;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        width: 30%;
+        height: 100%;
+      }
+}
+    .name_recipe {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-family: "Open Sans";
+        label {
+          font-size: 1.5rem;
+          width: 40%;
+        }
+      input {
+        width: 45%;
+        font-size: 1.2rem;
+        outline: none;
+        border-radius: 5px;
+      }
+
+    }
+      .description_recipe {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-family: "Open Sans";
+        label {
+          font-size: 1.5rem;
+          width: 30%;
+        }
+        textarea {
+          width: 70%;
+          outline: none;
+          font-family: $font-open-sans;
+          font-size: 1rem;
+          border-radius: 5px;
+        }
+
+      }
+
+      .container_recipe {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60%;
+        width: 100%;
+        .instruction_recipe {
+          width: 45%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          h2 {
+            font-family: "Open Sans";
+            border-bottom: 2px solid grey;
+            font-size: 2rem;
+          }
+          .add_instruction {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            textarea {
+              width: 90%;
+              font-family: $font-open-sans;
+              border-radius: 5px;
+              outline: none;
+            }
+            i {font-size: 2rem;
+              color: $color_btn;
+              transition: 0.2s;
+              &:hover {
+                color: #1cea1c;
+              }
+            }
+          }
+          .box_with_instruction {
+            border: 1px solid $color_column_text;
+            border-radius: 5px;
+            overflow-y: scroll;
+            font-size: 1.3rem;
+            font-family: $font-open-sans;
+            width: 100%;
+            height: 60%;
+            ol {
+            list-style: decimal;
+              li {
+                margin-left: 40px;
+                padding: 5px;
+
+              }
+            }
+
+          }
+        }
+
+
+        .ingredients_recipe {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 45%;
+          height: 100%;
+          h2 {
+            border-bottom: 2px solid grey;
+            font-size: 2rem;
+            font-family: "Open Sans";
+          }
+          .add_ingredients {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            textarea {
+              width: 90%;
+              font-family: $font-open-sans;
+              border-radius: 5px;
+              outline: none;
+            }
+            i {font-size: 2rem;
+              color: $color_btn;
+              transition: 0.2s;
+              &:hover {
+                color: #1cea1c;
+              }
+            }
+          }
+          .box_with_ingredients {
+            border: 1px solid $color_column_text;
+            border-radius: 5px;
+            overflow-y: scroll;
+            font-size: 1.3rem;
+            font-family: $font-open-sans;
+            width: 100%;
+            height: 60%;
+            ol {
+              list-style: decimal;
+              li {
+                margin-left: 40px;
+                padding: 5px;
+
+              }
+            }
+          }
+        }
+      }
+
+    }}
+}
