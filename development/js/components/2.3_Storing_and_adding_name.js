@@ -8,7 +8,6 @@ btnName.addEventListener("click", function () {
     localStorage.setItem('savedName', inputName.value);
     textName.value = localStorage.getItem("savedName");
     for (let el of allsubSections) {
-        console.log(el)
         el.dataset.isselected = "false";
         const {ticketFirst} = el.dataset
         ticketFirst === "3.1_Desktop_-_Widget_add_recipes_and_plan" ? el.dataset.isselected = "true" : el.dataset.isselected = "false"
@@ -34,7 +33,6 @@ if (localStorage.getItem("savedName") === null) {
 if (localStorage.getItem("savedName") != null) {
     textName.value = localStorage.getItem("savedName");
     for (let el of allsubSections) {
-        console.log(el)
         el.dataset.isselected = "false";
         const {ticketFirst} = el.dataset
         ticketFirst === "3.1_Desktop_-_Widget_add_recipes_and_plan" ? el.dataset.isselected = "true" : el.dataset.isselected = "false"
