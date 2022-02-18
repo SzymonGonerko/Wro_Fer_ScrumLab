@@ -238,8 +238,243 @@
         </form>
         </div>
       </section>
-      <section class="subSec subSec__desktop add__new__plan" data-isSelected="false" data-ticket-first="6.1_Add_new_plan" data-ticket-sec="6.2_Add_new_plan">
-        <div>fdgfgdfgfdgtyhfnfbbggggbbb</div>
+      <section class="subSec subSec__desktop add__new__plan" data-isSelected="false" data-ticket-first="6.1_Add_new_plan" data-ticket-sec="6.2_Add_new_plan" id="plan">
+        <div class="plan_box">
+          <form class="plan_box_header">
+            <p class="plan_box_header--text">nowy plan</p>
+            <button class="plan_box_header--submit" type="submit">Zapisz i zamknij</button>
+          </form>
+
+          <div class="plan_box_separator"></div>
+
+          <div class="plan_box_main">
+            <form class="plan_box_main_name">
+              <label class="plan_box_main_name--text" for="name">Nazwa planu</label>
+              <input class="plan_box_main_name--input" id="name" type="text" maxlength="50" placeholder="Wpisz nazwę planu...">
+            </form>
+
+            <form class="plan_box_main_description">
+              <label class="plan_box_main_description--text" for="description">Opis planu</label>
+              <textarea class="plan_box_main_description--input" id="description" maxlength="360" placeholder="Wpisz opis planu..."></textarea>
+            </form>
+
+            <form class="plan_box_main_week">
+              <label class="plan_box_main_week--text" for="week">Numer tygodnia</label>
+              <input class="plan_box_main_week--input" id="week" type="number" min="1" max="52" placeholder="Nr">
+            </form>
+
+            <div class="plan_box_main_separator"></div>
+
+            <div class="plan_box_main_table">
+              <table>
+                <tr>
+                  <th></th>
+                  <th>śniadanie</th>
+                  <th>drugie śniadanie</th>
+                  <th>zupa</th>
+                  <th>drugie danie</th>
+                  <th>kolacja</th>
+                </tr>
+                <tr>
+                  <td>poniedziałek</td>
+                  <td>
+                    <select name="list" class="monday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="monday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="monday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="monday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="monday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>wtorek</td>
+                  <td>
+                    <select name="list" class="tuesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="tuesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="tuesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="tuesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="tuesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>środa</td>
+                  <td>
+                    <select name="list" class="wednesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="wednesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="wednesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="wednesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="wednesday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>czwartek</td>
+                  <td>
+                    <select name="list" class="thursday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="thursday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="thursday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="thursday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="thursday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>piątek</td>
+                  <td>
+                    <select name="list" class="friday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="friday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="friday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="friday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="friday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>sobota</td>
+                  <td>
+                    <select name="list" class="saturday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="saturday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="saturday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="saturday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="saturday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>niedziela</td>
+                  <td>
+                    <select name="list" class="sunday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="sunday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="sunday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="sunday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="list" class="sunday">
+                      <option value="">Wybierz</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="subSec subSec__desktop section__success" data-isSelected="false" data-ticket-first="4.1_Add_new_recipe(success)">
         <div class="success-animation">
@@ -247,11 +482,18 @@
         </div>
         <div>Przepis został dodany</div>
       </section>
+      <section class="subSec subSec__desktop section__success" data-isSelected="false" data-ticket-first="6.1_Add_new_plan(success)">
+        <div class="success-animation">
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+        </div>
+        <div>Plan został dodany</div>
+      </section>
     </section>
   </main>
   <script src="./js/components/2.3_Storing_and_adding_name.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/components/4.1_Add_new_recipe.js"></script>
   <script src="./js/components/3.2_Desktop_-_Widget_info.js"></script>
+    <script src="./js/components/schedules.js"></script>
   </body>
 </html>

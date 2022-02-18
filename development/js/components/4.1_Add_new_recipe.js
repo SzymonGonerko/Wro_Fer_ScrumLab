@@ -48,6 +48,14 @@ function addPlan () {
         ticketFirst === "6.1_Add_new_plan" ? el.dataset.isselected = "true" : el.dataset.isselected = "false"
         el.dataset.isselected === "true" ? el.classList.add("show__subsection") : el.classList.remove("show__subsection")
     }
+    for (let element of selects) {
+        allRecipes.forEach(el => {
+            console.log(el)
+            let option = document.createElement("option")
+            option.innerHTML = `<option value="">${el.title}</option>`
+            element.appendChild(option)
+        })
+    }
 }
 
 
