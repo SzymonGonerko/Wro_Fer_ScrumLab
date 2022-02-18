@@ -14,7 +14,7 @@ function updateInfoWidget (num) {
     }
 }
 
-updateInfoWidget(localStorage.getItem("allRecipes"))
+updateInfoWidget(localStorage.getItem("numbersOfRecipes"))
 
 function updateInfoWidgetPlans (num) {
     const textWidgetInfo = document.querySelector(".widget_text_plans")
@@ -32,4 +32,4 @@ function updateInfoWidgetPlans (num) {
     }
 }
 
-updateInfoWidgetPlans(localStorage.getItem("plans"))
+updateInfoWidgetPlans(localStorage.getItem("numberOfPlans"))
