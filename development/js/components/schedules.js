@@ -3,7 +3,6 @@ const planTitle = document.querySelector(".plan_box_main_name--input");
 const planDescription = document.querySelector(".plan_box_main_description--input");
 const weekNumber = document.querySelector(".plan_box_main_week--input");
 
-
 const mondayArr = document.querySelectorAll(".monday");
 const tuesdayArr = document.querySelectorAll(".tuesday");
 const wednesdayArr = document.querySelectorAll(".wednesday");
@@ -37,9 +36,29 @@ class Schedule {
     }
 }
 
+const addPlan = (e) => {
+    e.preventDefault();
 
+    for (let el of subSections) {
+        el.dataset.isselected = "false";
+        const {ticketFirst} = el.dataset
+        ticketFirst === "6.1_Add_new_plan" ? el.dataset.isselected = "true" : el.dataset.isselected = "false"
+        el.dataset.isselected === "true" ? el.classList.add("show__subsection") : el.classList.remove("show__subsection")
+    }
 
+    planTitle.value = '';
+    planDescription.value = '';
+    weekNumber.value = '';
+    selects.forEach(el => el.innerHTML = `<option value="">Wybierz</option>`)
 
+    for (let element of selects) {
+        allRecipes.forEach(el => {
+            let option = document.createElement("option")
+            option.innerHTML = `<option value="">${el.title}</option>`
+            element.appendChild(option)
+        })
+    }
+}
 
 const storePlan = (e) => {
     e.preventDefault()
@@ -72,11 +91,13 @@ const storePlan = (e) => {
             const {ticketFirst} = el.dataset
             ticketFirst === "3.1_Desktop_-_Widget_add_recipes_and_plan" ? el.dataset.isselected = "true" : el.dataset.isselected = "false"
             el.dataset.isselected === "true" ? el.classList.add("show__subsection") : el.classList.remove("show__subsection")
-
-        };
-
+        }
     }, 1700);
-
 }
-const planSubmit = document.querySelector("form.plan_box_header")
+
+for (let el of widgets) {
+    el.dataset.event === "add_plan" ? el.addEventListener("click", addPlan): null;
+}
+
+const planSubmit = document.querySelector(".plan_box_header")
 planSubmit.addEventListener('submit', storePlan);
