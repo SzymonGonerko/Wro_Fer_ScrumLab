@@ -1,0 +1,94 @@
+.subSec__recipes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    border: 2px dotted grey;
+    background-color: $color_screen;
+
+
+    .subSecbSe__header {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px 0 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $color_table_row_text;
+
+        h1 {
+            display: block;
+            font-family: $font-open-sans;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FF6600;
+            text-transform: uppercase;
+        }
+
+        i {
+            display: block;
+            font-size: 2rem;
+            color: $color_msg_success;
+        }
+    }
+
+    .subSecbSe__table {
+        margin: 20px 60px;
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+
+    table {
+        text-align: left;
+        width: 100%;
+
+        thead {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: $color_header;
+            border-top: 1px solid $color_table_row_text;
+
+            th {
+                padding-top: 10px;
+                padding-right: 30px;
+                padding-bottom: 10px;
+            }
+        }
+
+        tbody {
+            border-top: 1px solid $color_table_row_text;
+            font-size: 1.2rem;
+            color: $color_table_row_text;
+
+
+            tr {
+                border-bottom: 1px solid $color_sidebar;
+            }
+
+            td {
+                padding: 10px 30px 10px 15px;
+            }
+
+            .description {
+                font-size: 1rem;
+                width: 100%;
+            }
+
+            .icons {
+                display: flex;
+                max-width: 70px;
+                justify-content: space-around;
+                font-size: 1.4rem;
+            }
+
+            .fa-edit {
+                color: $color_msg_warn;
+            }
+
+            .fa-trash-alt {
+                color: $color_btn;
+            }
+        }
+
+    }
+}
