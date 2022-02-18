@@ -33,6 +33,8 @@ class Schedule {
         } catch (e) {}
         newPlan.push(el);
         localStorage.setItem("plans", JSON.stringify(newPlan));
+        localStorage.setItem("numberOfPlans", JSON.parse(localStorage.getItem('plans')).length)
+        updateInfoWidgetPlans(localStorage.getItem("numberOfPlans"))
     }
 }
 
