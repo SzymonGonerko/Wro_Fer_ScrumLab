@@ -23,7 +23,7 @@ try {
 
 
 for (let el of widgets) {
-    el.dataset.event === "add_recipe" ? el.addEventListener("click", addRecipe): el.addEventListener("click", addPlan)
+    el.dataset.event === "add_recipe" ? el.addEventListener("click", addRecipe): null;
 }
 
 function addRecipe () {
@@ -41,14 +41,6 @@ function addRecipe () {
     olIngredient.innerHTML = '<ol type="1" class="ol__ingredient"></ol>'
 }
 
-function addPlan () {
-    for (let el of subSections) {
-        el.dataset.isselected = "false";
-        const {ticketFirst} = el.dataset
-        ticketFirst === "6.1_Add_new_plan" ? el.dataset.isselected = "true" : el.dataset.isselected = "false"
-        el.dataset.isselected === "true" ? el.classList.add("show__subsection") : el.classList.remove("show__subsection")
-    }
-}
 
 
 const iconsAdd = document.querySelectorAll(".icon__recipe")
@@ -167,6 +159,7 @@ function Recipe () {
 
         if (this.isCorrect) {
             allRecipes.push(this.recpie)
+            console.log(allRecipes)
             console.log(this.recpie)
             localStorage.setItem('allRecipes', JSON.stringify(allRecipes))
             localStorage.setItem("numbersOfRecipes", JSON.parse(localStorage.getItem('allRecipes')).length)
